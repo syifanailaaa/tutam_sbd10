@@ -7,7 +7,7 @@ const app = express()
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://tutamsbd10-production-7cf3.up.railway.app/"
+    "https://tutam-sbd10-two.vercel.app"
   ]
 }))
 app.use(express.json())
