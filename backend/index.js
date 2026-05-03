@@ -4,7 +4,12 @@ require("dotenv").config()
 const { Pool } = require("pg")
 
 const app = express()
-app.use(cors())
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://tutamsbd10-production-7cf3.up.railway.app/"
+  ]
+}))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
